@@ -1,4 +1,12 @@
-const UpdateTime = () => {
+import React from "react";
+
+function Form(){
+
+    const time = new Date().toLocaleTimeString();
+
+    const [clockTime , setClockTime] = useState(time);
+
+    const UpdateTime = () => {
         const time = new Date().toLocaleTimeString();
         setClockTime(time);
     }
